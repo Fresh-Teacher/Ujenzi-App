@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
-const repo = "https://fresh-teacher.github.io";
+const repo = "https://ujenzi.vercel.app/";
 let deferredPrompt;
 
 function App() {
@@ -64,11 +64,11 @@ function App() {
                 <a href="Ssebulibas.apk" download>
                   here
                 </a>{' '}
-                to download the APK of Ujenzi App manually.
+                to download its APK.
               </p>
               <p>
-                Go to{' '}
-                <a href={repo} className="https://fresh-teacher.github.io">
+                <strong>Go to Homepage</strong> 🏠{' '}
+                <a href={repo} className="https://ujenzi.vercel.app/">
                   Homepage
                 </a>{' '}.
               </p>
@@ -76,7 +76,7 @@ function App() {
           )
         ) : (
           <p>
-            <a href={repo} className="https://fresh-teacher.github.io">
+            <a href={repo} className="https://ujenzi.vercel.app/">
               Go to Homepage
             </a>
           </p>
