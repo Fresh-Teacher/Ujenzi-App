@@ -50,28 +50,22 @@ function App() {
         {installable ? (
           countdown > 0 ? (
             <>
+                <p>
+                The Ujenzi App will install in: {countdown} seconds.
+              </p>
               <button className="install-button" onClick={handleInstallClick}>
                 INSTALL THE UJENZI APP
               </button>
-              <p>
-                The Ujenzi App will install in: {countdown} seconds.
-              </p>
+          
             </>
           ) : (
             <>
               <p>
                 If the app was not installed, click{' '}
-                <a href="your-apk-file-url.apk" download>
+                <a href="public/Ssebulibas.apk" download>
                   here
                 </a>{' '}
                 to download the APK manually.
-              </p>
-              <p>
-                Download APK with a{' '}
-                <a href="your-apk-file-url.apk" download>
-                  link
-                </a>{' '}
-                to the apk file.
               </p>
             </>
           )
