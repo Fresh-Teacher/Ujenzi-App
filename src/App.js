@@ -77,7 +77,7 @@ function App() {
         ) : (
           <p>
             <a href={repo}>
-              Go to Homepage
+            <strong>Go to Homepage</strong>
             </a>
           </p>
         )}
