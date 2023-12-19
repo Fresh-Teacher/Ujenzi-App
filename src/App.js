@@ -66,6 +66,12 @@ function App() {
                 </a>{' '}
                 to download its APK.
               </p>
+              <p>
+                {' '}
+                <a href={repo}>
+                  <strong>Go to Homepage</strong>
+                </a>{' '}.
+              </p>
             </>
           )
         ) : (
