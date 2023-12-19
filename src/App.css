@@ -2,7 +2,7 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Arial', sans-serif;
-  background-color: #f4f4f4;
+  background-color: #63d965;
 }
 
 .App {
@@ -22,7 +22,7 @@ body {
 }
 
 .App-header {
-  background-color: #fff;
+  background-color: rgb(55, 219, 224);
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
@@ -41,7 +41,7 @@ h2 {
 
 .install-button {
   background-color: #4caf50;
-  color: #fff;
+  color: rgb(188, 255, 203);
   border: none;
   padding: 10px 20px;
   font-size: 16px;
