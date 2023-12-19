@@ -67,9 +67,9 @@ function App() {
                 to download its APK.
               </p>
               <p>
-                <strong>Go to Homepage</strong> 🏠{' '}
+                {' '}
                 <a href={repo} className="https://ujenzi.vercel.app/">
-                  Homepage
+                <strong>Go to Homepage 🏠</strong>
                 </a>{' '}.
               </p>
             </>
