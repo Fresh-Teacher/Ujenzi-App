@@ -61,7 +61,7 @@ function App() {
             <>
               <p>
                 If the installation button did not appear, click{' '}
-                <a href="ujenzi.apk" download>
+                <a href="ujenzi app.apk" download>
                   here
                 </a>{' '}
                 to download the APK.
