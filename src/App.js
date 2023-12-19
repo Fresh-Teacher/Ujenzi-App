@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
-const repo = "https://ujenzi.vercel.app/ujenzi.apk";
+const repo = "https://freshteacher.software";
 let deferredPrompt;  
     
 function App() {
@@ -41,14 +41,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Ujenzi Group of Companies</h2>
+        <h2>Fresh Teacher's Technologies</h2>
         {installable &&
           <button className="install-button" onClick={handleInstallClick}>
-            INSTALL THE UJENZI APP
+            INSTALL THE FRESH APP
           </button>
         }
         <p>
-          <a href={repo} className="App-link">Download the APK 📥</a>
+          <a href={repo} className="App-link">Go to Fresh Teacher's e-Library</a>
         </p>
       </header>
     </div>
