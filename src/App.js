@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
-const repo = "https://freshteacher.software";
+const repo = "https://fresh-teacher.github.io";
 let deferredPrompt;
 
 function App() {
@@ -46,12 +46,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Ujenzi Group of Companies</h2>
+        <h2>UJENZI GROUP OF COMPANIES</h2>
         {installable ? (
           countdown > 0 ? (
             <>
               <p>
-                The Ujenzi App will install in: {countdown} seconds.
+                The Install Button will appear in: {countdown} seconds.
               </p>
               <button className="install-button" onClick={handleInstallClick}>
                 INSTALL THE UJENZI APP
@@ -60,15 +60,15 @@ function App() {
           ) : (
             <>
               <p>
-                If the app was not installed, click{' '}
-                <a href="public/Ssebulibas.apk" download>
+                If the installation button did not appear, click{' '}
+                <a href="Ssebulibas.apk" download>
                   here
                 </a>{' '}
-                to download the APK manually.
+                to download the APK of Ujenzi App manually.
               </p>
               <p>
                 Go to{' '}
-                <a href={repo} className="public/library.html">
+                <a href={repo} className="https://fresh-teacher.github.io">
                   Homepage
                 </a>{' '}.
               </p>
