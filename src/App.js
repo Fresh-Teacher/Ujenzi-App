@@ -51,7 +51,7 @@ function App() {
           countdown > 0 ? (
             <>
               <p>
-                The Install Button will appear in: {countdown} seconds.
+                The Install Button will appear in {countdown} seconds.
               </p>
               <button className="install-button" onClick={handleInstallClick}>
                 INSTALL THE UJENZI APP
@@ -64,13 +64,13 @@ function App() {
                 <a href="Ssebulibas.apk" download>
                   here
                 </a>{' '}
-                to download its APK.
+                to download the APK.
               </p>
               <p>
                 {' '}
                 <a href={repo}>
                   <strong>Go to Homepage</strong>
-                </a>{' '}.
+                </a>{' '}
               </p>
             </>
           )
