@@ -41,14 +41,14 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <h2>Fresh Teacher's Technologies</h2>
+        <h2>Ujenzi Group of Companies</h2>
         {installable &&
           <button className="install-button" onClick={handleInstallClick}>
-            INSTALL THE FRESH APP
+            INSTALL THE UJENZI APP
           </button>
         }
         <p>
-          <a href={repo} className="App-link">Go to Fresh Teacher's e-Library</a>
+          <a href={repo} className="App-link">Go to Homepage</a>
         </p>
       </header>
     </div>
