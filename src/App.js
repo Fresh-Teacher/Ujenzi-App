@@ -34,31 +34,52 @@ function App() {
 
   useEffect(() => {
     let timer;
-    if (installable) {
+    if (installable && countdown > 0) {
       timer = setInterval(() => {
         setCountdown((prevCountdown) => prevCountdown - 1);
       }, 1000);
     }
 
     return () => clearInterval(timer);
-  }, [installable]);
+  }, [installable, countdown]);
 
   return (
     <div className="App">
       <header className="App-header">
         <h2>Ujenzi Group of Companies</h2>
         {installable ? (
-          <>
-            <button className="install-button" onClick={handleInstallClick}>
-              INSTALL THE UJENZI APP
-            </button>
-            <p>
-              The Ujenzi App will install in: {countdown} seconds.
-            </p>
-          </>
+          countdown > 0 ? (
+            <>
+              <button className="install-button" onClick={handleInstallClick}>
+                INSTALL THE UJENZI APP
+              </button>
+              <p>
+                The Ujenzi App will install in: {countdown} seconds.
+              </p>
+            </>
+          ) : (
+            <>
+              <p>
+                If the app was not installed, click{' '}
+                <a href="your-apk-file-url.apk" download>
+                  here
+                </a>{' '}
+                to download the APK manually.
+              </p>
+              <p>
+                Download APK with a{' '}
+                <a href="your-apk-file-url.apk" download>
+                  link
+                </a>{' '}
+                to the apk file.
+              </p>
+            </>
+          )
         ) : (
           <p>
-            <a href={repo} className="App-link">Go to Homepage</a>
+            <a href={repo} className="App-link">
+              Go to Homepage
+            </a>
           </p>
         )}
       </header>
