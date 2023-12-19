@@ -54,14 +54,14 @@ function App() {
                 The Install Button will appear in {countdown} seconds.
               </p>
               <button className="install-button" onClick={handleInstallClick}>
-                INSTALL THE UJENZI APP
+                <strong>INSTALL THE UJENZI APP</strong> 📥
               </button>
             </>
           ) : (
             <>
               <p>
                 If the installation button did not appear, click{' '}
-                <a href="Ssebulibas.apk" download>
+                <a href="ujenzi.apk" download>
                   here
                 </a>{' '}
                 to download the APK.
