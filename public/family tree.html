@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+  <style>
+    body {
+      padding: 20px;
+    }
+
+    .family-tree {
+      margin-top: 20px;
+    }
+  </style>
+  <title>Family Tree</title>
+</head>
+<body>
+
+<div class="container">
+  <button id="expandCollapseBtn" class="btn btn-primary">Expand Family Tree</button>
+
+  <div id="familyTree" class="family-tree" style="display: none;">
+    <h2 id="familyHeads">Enock and Christine's Children</h2>
+    <ul id="childrenList">
+      <li>
+        <button class="btn btn-link" data-toggle="modal" data-target="#child1Modal">Child 1</button>
+      </li>
+      <li>
+        <button class="btn btn-link" data-toggle="modal" data-target="#child2Modal">Child 2</button>
+      </li>
+      <li>
+        <button class="btn btn-link" data-toggle="modal" data-target="#child3Modal">Child 3</button>
+      </li>
+      <li>
+        <button class="btn btn-link" data-toggle="modal" data-target="#child4Modal">Child 4</button>
+      </li>
+      <li>
+        <button class="btn btn-link" data-toggle="modal" data-target="#child5Modal">Child 5</button>
+      </li>
+    </ul>
+  </div>
+
+<!-- ... (previous code) ... -->
+
+<div class="modal fade" id="child1Modal" tabindex="-1" role="dialog" aria-labelledby="child1ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="child1ModalLabel">Child 1's Children</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>
+              <button class="btn btn-link" data-toggle="modal" data-target="#grandchild1Modal">Grandchild 1</button>
+            </li>
+            <li>
+              <button class="btn btn-link" data-toggle="modal" data-target="#grandchild2Modal">Grandchild 2</button>
+            </li>
+            <li>Grandchild 3</li>
+            <!-- Add more grandchildren here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- Great-Grandchildren Modal for Grandchild 2 -->
+  <div class="modal fade" id="grandchild2Modal" tabindex="-1" role="dialog" aria-labelledby="grandchild2ModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="grandchild2ModalLabel">Grandchild 2's Children</h5>
+          <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+          <ul>
+            <li>Great-Grandchild 1</li>
+            <li>Great-Grandchild 2</li>
+            <!-- Add more great-grandchildren here -->
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+  <!-- ... (previous code) ... -->
+  
+
+  <!-- Add Modals for other children -->
+
+</div>
+
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+<script>
+  $(document).ready(function () {
+    $("#expandCollapseBtn").click(function () {
+      $("#familyTree").toggle();
+      var buttonText = $("#expandCollapseBtn").text() === "Expand Family Tree" ? "Collapse Family Tree" : "Expand Family Tree";
+      $("#expandCollapseBtn").text(buttonText);
+    });
+  });
+</script>
+
+</body>
+</html>
