@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
-const repo = "https://fresh-teacher.github.io";
+const repo = "https://ujenzi.vercel.app/";
 let deferredPrompt;
 
 function App() {
@@ -66,7 +66,7 @@ function App() {
             <>
               <p>
                 If the installation button did not appear, click{' '}
-                <a href="Fresh App.apk" download>
+                <a href="ujenzi app.apk" download>
                   here
                 </a>{' '}
                 to download the APK.
