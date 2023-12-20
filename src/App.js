@@ -46,7 +46,12 @@ function App() {
   return (
     <div className="App">
       <header className="App-header">
+        {/* Logo Image */}
+        <img src="j_company_2-1-removebg-preview.png" alt="UJENZI Logo" className="app-logo" />
+
+        {/* Company Heading */}
         <h2>UJENZI GROUP OF COMPANIES</h2>
+
         {installable ? (
           countdown > 0 ? (
             <>
