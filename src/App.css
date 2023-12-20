@@ -32,11 +32,11 @@ body {
   align-items: center;
   justify-content: center;
   font-size: calc(10px + 2vmin);
-  color: #333;
+  color: rgb(0, 0, 0);
 }
 
 h2 {
-  color: #333;
+  color: rgb(0, 0, 0);
 }
 
 .App-logo {
@@ -62,7 +62,7 @@ h2 {
 }
 
 p {
-  color: #555;
+  color: rgb(0, 0, 0);
   margin: 15px 0;
 }
 
