@@ -47,8 +47,8 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* Logo Image */}
-        <img src="j_company_2-1-removebg-preview.png" alt="UJENZI Logo" className="app-logo" />
-
+        <img src="j_company_2-1-removebg-preview.png" alt="UJENZI Logo" className="App-logo" />
+  
         {/* Company Heading */}
         <h2>UJENZI GROUP OF COMPANIES</h2>
 

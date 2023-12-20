@@ -39,6 +39,13 @@ h2 {
   color: #333;
 }
 
+.App-logo {
+  max-width: 100px; /* Adjust the maximum width as needed */
+  max-height: 100px; /* Adjust the maximum height as needed */
+  width: auto;
+  height: auto;
+}
+
 .install-button {
   background-color: #1691d3;
   color: rgb(255, 255, 255);
