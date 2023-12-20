@@ -51,13 +51,12 @@ function App() {
   
         {/* Company Heading */}
         <h2>UJENZI GROUP OF COMPANIES</h2>
-
+  
+        {/* Conditional Rendering for Installable */}
         {installable ? (
           countdown > 0 ? (
             <>
-              <p>
-                The Install Button will appear in {countdown} seconds.
-              </p>
+              <p>The Install Button will appear in {countdown} seconds.</p>
               <button className="install-button" onClick={handleInstallClick}>
                 <strong>INSTALL THE UJENZI APP</strong> 📥
               </button>
@@ -71,20 +70,17 @@ function App() {
                 </a>{' '}
                 to download the APK.
               </p>
-              <p>
-                {' '}
-                <a href={repo}>
-                  <strong>Go to Homepage</strong>
-                </a>{' '}
-              </p>
+              {/* "Go to Homepage" Bootstrap Button */}
+              <a href={repo} className="btn btn-primary">
+                <strong>Go to Homepage</strong>
+              </a>
             </>
           )
         ) : (
-          <p>
-            <a href={repo}>
+          // "Go to Homepage" Bootstrap Button
+          <a href={repo} className="btn btn-primary">
             <strong>Go to Homepage</strong>
-            </a>
-          </p>
+          </a>
         )}
       </header>
     </div>
