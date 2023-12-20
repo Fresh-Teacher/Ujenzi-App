@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
-const repo = "https://ujenzi.vercel.app/";
+const repo = "https://fresh-teacher.github.io";
 let deferredPrompt;
 
 function App() {
