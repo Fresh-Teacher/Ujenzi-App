@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
-const repo = "https://ujenzi.vercel.app/";
+const repo = "https://npjs.vercel.app/";
 let deferredPrompt;
 
 function App() {
@@ -47,10 +47,10 @@ function App() {
     <div className="App">
       <header className="App-header">
         {/* Logo Image */}
-        <img src="logo.png" alt="UJENZI Logo" className="App-logo" />
+        <img src="logo.png" alt="NPJS Logo" className="App-logo" />
   
         {/* Company Heading */}
-        <h2>UJENZI GROUP OF COMPANIES</h2>
+        <h2>NAMUNGOONA PARENTS' JUNIOR SCHOOL</h2>
 
         {installable ? (
           countdown > 0 ? (
@@ -59,14 +59,14 @@ function App() {
                 The Install Button will appear in {countdown} seconds.
               </p>
               <button className="install-button" onClick={handleInstallClick}>
-                <strong>INSTALL THE UJENZI APP</strong> 📥
+                <strong>INSTALL THE NPJS APP</strong> 📥
               </button>
             </>
           ) : (
             <>
               <p>
                 If the installation button did not appear, click{' '}
-                <a href="ujenzi app.apk" download>
+                <a href="NPJS App.apk" download>
                   here
                 </a>{' '}
                 to download the APK.
