@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import './App.css';
 
-const repo = "https://npjs.vercel.app/";
+const repo = "https://fresh-pwa-app.vercel.app";
 let deferredPrompt;
 
 function App() {
@@ -59,7 +59,7 @@ function App() {
                 The Install Button will appear in {countdown} seconds.
               </p>
               <button className="install-button" onClick={handleInstallClick}>
-                <strong>INSTALL THE NPJS APP</strong> 📥
+                <strong>INSTALL THE LOVE APP</strong> 📥
               </button>
             </>
           ) : (

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Website Maintenance</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <style>
+    .modal-message {
+      color: red;
+    }
+    .center-button {
+      text-align: center;
+    }
+    /* Animation for the Buy New Domain button */
+    @keyframes shake {
+      0%, 100% {
+        transform: translateX(0);
+      }
+      50% {
+        transform: translateX(-10px);
+      }
+    }
+    .shake-effect {
+      animation: shake 0.5s ease-in-out infinite;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Your modal HTML structure -->
+  <div class="modal" id="maintenanceModal" tabindex="-1" role="dialog" aria-labelledby="maintenanceModalLabel" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header text-center">
+          <h5 class="modal-title w-100" id="maintenanceModalLabel">SHUTDOWN NOTICE</h5>
+        </div>
+        <div class="modal-body">
+          <p id="countdown" class="modal-message">Initializing...</p>
+          <!-- Animated "Buy New Domain" button with an icon -->
+          <div class="center-button">
+            <button type="button" class="btn btn-success shake-effect" id="buyNewDomainBtn">
+              <span>&#x1F449;</span> Buy New Domain
+            </button>
+          </div>
+        </div>
+        <div class="modal-footer justify-content-center">
+          <!-- "Ok, I understand" button -->
+          <button type="button" class="btn btn-primary" data-dismiss="modal">Ok, I understand.</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      const countdownEndDate = new Date('2023-12-13T00:00:00Z').getTime();
+
+      function updateCountdown() {
+        const now = new Date().getTime();
+        const timeDifference = countdownEndDate - now;
+
+        if (timeDifference > 0) {
+          const hours = Math.floor((timeDifference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+          const minutes = Math.floor((timeDifference % (1000 * 60 * 60)) / (1000 * 60));
+          const seconds = Math.floor((timeDifference % (1000 * 60)) / 1000);
+
+          // Change the message and add a line break
+          document.getElementById('countdown').innerHTML = `This website is currently hosted on a temporary link, and it will be deleted in the next 24 hours.<br>If you are the developer, we recommend purchasing a domain name to avoid losing your content and ensure uninterrupted access for your users.<br>The website will be deleted in <span class="modal-message">${hours} Hours, ${minutes} Minutes, and ${seconds} Seconds.</span>`;
+        } else {
+          // Change the message when the time ends
+          const deletedMessage = document.createElement('p');
+          deletedMessage.className = 'modal-message';
+          deletedMessage.innerHTML = 'This website has been deleted from our temporary link. Please purchase a domain name to ensure uninterrupted access for your users.';
+          document.getElementById('countdown').replaceWith(deletedMessage);
+          // Remove the "Ok, I understand" button
+          document.querySelector('.modal-footer').remove();
+        }
+      }
+
+      updateCountdown();
+      setInterval(updateCountdown, 1000);
+
+      $('#maintenanceModal').modal({
+        backdrop: 'static',
+        keyboard: false
+      });
+
+      // Add click event for animated "Buy New Domain" button
+      document.getElementById('buyNewDomainBtn').addEventListener('click', function () {
+        // Replace 'YOUR_DOMAIN_REGISTRAR_URL' with the actual URL of the domain registrar
+        window.location.href = 'https://www.godaddy.com/';
+      });
+    });
+  </script>
+</body>
+</html>
