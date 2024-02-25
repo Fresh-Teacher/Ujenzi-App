@@ -217,6 +217,23 @@
 
         }
 
+        /* CSS for pulsating animation */
+    @keyframes pulse {
+        0% {
+            transform: scale(1);
+        }
+        50% {
+            transform: scale(1.1);
+        }
+        100% {
+            transform: scale(1);
+        }
+    }
+
+    .btn-pulse {
+        animation: pulse 1.5s infinite;
+    }
+
     </style>
 
 </head>
@@ -267,7 +284,7 @@
 
 
 
-  <marquee class="m1" behavior="scroll" direction="up" scrolldelay="0"> <br>
+   <marquee class="m1" behavior="scroll" direction="up" scrolldelay="0"> <br>
 
     💐<br><br> <!-- Bouquet -->
 
@@ -331,7 +348,6 @@
 
 </marquee>
 
-
     
 
 
@@ -391,7 +407,12 @@
 
 
     <div class="container mt-5" id="biography">
-
+        
+        <center><div class="container mt-5">
+            <a href="app.apk" class="btn btn-primary btn-pulse">Install Our App</a>
+        </div></center>
+        
+        <br>
         <h1>Biography ✍🏻</h1>
 
     <p>Jesse and Lillian, their hearts drawn together like magnets, crossed paths <span id="yearsPassed"></span> years ago. 
@@ -531,7 +552,7 @@ Strangers at first, they exchanged quick glances, unaware of the journey fate ha
     </div>
 
 
-      <!-- ======= Gallery Section ======= -->
+         <!-- ======= Gallery Section ======= -->
         <section id="gallery" class="gallery">
             <div class="container">
                 <div class="section-title" data-aos="fade-up">
@@ -641,7 +662,7 @@ Strangers at first, they exchanged quick glances, unaware of the journey fate ha
     
             <div class="mt-3">
     
-                <a href="https://ujenzi-app.vercel.app/LOVE AT LAST SIGHT BOOK.pdf" class="btn btn-primary" download>Download the book</a>
+                <a href="LOVE AT LAST SIGHT BOOK.pdf" class="btn btn-primary" download>Download the book</a>
     
             </div>
     
