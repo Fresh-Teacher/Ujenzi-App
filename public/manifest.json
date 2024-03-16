@@ -1,6 +1,11 @@
 {
+<<<<<<< HEAD
   "short_name": "OSEB App",
   "name": "OSEB App",
+=======
+  "short_name": "Love Bible",
+  "name": "Love Bible",
+>>>>>>> 8c94e99c5fd089c1bdcbab1b4c5bdc2b04683076
   "icons": [
     {
       "src": "favicon.ico",
@@ -8,7 +13,7 @@
       "type": "image/x-icon"
     },
     {
-      "src": "logo192.png",
+      "src": "logo192.jpg",
       "type": "image/png",
       "sizes": "192x192"
     },

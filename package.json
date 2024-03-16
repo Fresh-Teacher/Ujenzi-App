@@ -1,5 +1,9 @@
 {
+<<<<<<< HEAD
   "name": "OSEB App",
+=======
+  "name": "Love Bible",
+>>>>>>> 8c94e99c5fd089c1bdcbab1b4c5bdc2b04683076
   "version": "0.1.0",
   "private": true,
   "dependencies": {
